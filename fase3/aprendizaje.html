@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		
+		body{
+			background-color: #1C6C8F;
+		}
+
+		.box{
+			display: flex;
+			background-color: black;
+			align-items: center;
+			height: 50px;
+		}
+
+		.box1{
+			display: flex;
+			background-color: black;
+			color: white;
+			flex-direction: column;
+			align-items: center;
+			height: 20%;
+			margin-top: 3%;
+		}
+
+		.box2{
+			display: flex;
+			background-color: black;
+			color: white;
+			align-items: center;
+			height: 20%;
+			margin-top: 1%;
+		}
+		.flex1{
+			display: flex;
+			flex: 1;
+			color: white;
+			cursor: pointer;
+			height: 50px;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.flex2{
+			display: flex;
+			flex-direction: column;
+			flex: 1;
+			color: white;
+			width: 100%;
+			cursor: pointer;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.boxcol{
+			display: flex;
+			width: 20% ;
+			flex-direction: column;
+			background-color: dimgrey;
+			align-items: left;
+			margin-top:20px;
+		}
+
+		
+
+		.justi{
+			justify-content: center;
+			align-items: center;
+			align-content: center;
+			padding-left: 5%;
+		}
+
+
+	</style>
+
+	<script type="text/javascript">
+		function over(objeto,col){
+			objeto.style.backgroundColor=col;
+		}
+		function redir(url){
+			window.location.href = url;
+		}
+
+		
+
+
+	</script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+
+<header>Flex Box, Listas y enlaces
+	<div class="box" id="caja1">
+		<div class="flex1" align="center" onmouseover="over(this,'#ff8000')" onmouseout="over(this,'#000000')" onclick="redir('../fase3/index.html')">Inicio</div>
+		<div class="flex1" align="center" onmouseover="over(this,'#ff8000')" onmouseout="over(this,'#000000')" onclick="redir('../fase3/temas.html')">Temas</div>
+		<div class="flex1" align="center" onmouseover="over(this,'#ff8000')" onmouseout="over(this,'#000000')" onclick="redir('#recursos')">Recursos Digitales</div>
+		<div class="flex1" align="center" onmouseover="over(this,'#ff8000')" onmouseout="over(this,'#000000')" onclick="redir('../fase3/aprendizaje.html')">Aprendizaje</div>
+		<div class="flex1" align="center" onmouseover="over(this,'#ff8000')" onmouseout="over(this,'#000000')" onclick="redir('../fase3/autor.html')">Acerca de David Maldonado</div>
+	</div>
+
+</header>
+<body>
+
+	<div class="box2">
+		<div class="box1">
+			<div class="flex2" onmouseover="over(this,'#ff8000')" onmouseout="over(this,'#000000')" ><h1>Aprendizaje 1</h1></div>
+			<div class="flex2" onmouseover="over(this,'#ff8000')" onmouseout="over(this,'#000000')" ><h1>Aprendizaje 2</h1></div>
+		</div>
+		<div id="divContent" class="justi" align="center">
+			
+			
+		</div>
+	</div>
+
+</body>
+</html>
